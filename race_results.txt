@@ -1,0 +1,27 @@
+Race results:
+
+2022-01-24 23:29:29 race results:
+        Driver Symbol  Time
+1        Ogier      O  3.46
+2   Greensmith      G  3.72
+3        Tänak      T  3.72
+4        Sordo      S  3.72
+5         Loeb      L  3.72
+6        Evans      E  3.72
+7     Neuville      N  3.99
+8        Breen      B  4.26
+9    Rovanpara      R  4.52
+10       Meeke      M  4.78
+
+2022-01-24 23:29:46 race results:
+        Driver Symbol  Time
+1     Neuville      N  3.47
+2   Greensmith      G  3.75
+3        Ogier      O  3.75
+4    Rovanpara      R  3.75
+5        Evans      E  3.75
+6        Sordo      S  4.03
+7        Tänak      T  4.03
+8        Breen      B  4.03
+9        Meeke      M  4.29
+10        Loeb      L  4.29
