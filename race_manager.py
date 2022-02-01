@@ -4,39 +4,96 @@ import random
 import racecar
 import racetrack
 
+NUMBER_OF_RACERS = 10  # MAX 10
+TRACK_MIN_LENGTH = 60
+TRACK_MAX_LENGTH = 100
+CAR_MIN_SPEED = 2
+CAR_MAX_SPEED = 5
+DRIVER_DATA = {
+    1: {
+        "name": "Tänak",
+        "symbol": "T"
+    },
+    2: {
+        "name": "Ogier",
+        "symbol": "O"
+    },
+    3: {
+        "name": "Loeb",
+        "symbol": "L"
+    },
+    4: {
+        "name": "Neuville",
+        "symbol": "N"
+    },
+    5: {
+        "name": "Rovanpara",
+        "symbol": "R"
+    },
+    6: {
+        "name": "Evans",
+        "symbol": "E"
+    },
+    7: {
+        "name": "Breen",
+        "symbol": "B"
+    },
+    8: {
+        "name": "Greensmith",
+        "symbol": "G"
+    },
+    9: {
+        "name": "Meeke",
+        "symbol": "M"
+    },
+    10: {
+        "name": "Sordo",
+        "symbol": "S"
+    }
+}
+
 
 class RaceManager:
-    def __init__(self, track_min_length, track_max_length):
+    def __init__(self):
         self.cars = []
         self.tracks = []
-        self.track_min_length = track_min_length
-        self.track_max_length = track_max_length
+        self.num_of_races = NUMBER_OF_RACERS
+        self.track_min_length = TRACK_MIN_LENGTH
+        self.track_max_length = TRACK_MAX_LENGTH
+        self.min_speed = CAR_MIN_SPEED
+        self.max_speed = CAR_MAX_SPEED
         self.track_length = None
         self.set_track_length()
         self.race_over = False
+        self.setup_race()
 
-    def add_car(self, number, image, driver_name, min_speed, max_speed):
+    def setup_race(self):
+        for i in range(1, self.num_of_races + 1):
+            self.add_car(number=i)
+            self.add_track(number=i)
+
+    def add_car(self, number):
         """
         Creates a Car item and adds it to track list
-        Accepts car number, driver symbol, driver name, car minimal speed and car maximal speed
+        Accepts car number
         """
         car = racecar.Car(
             car_number=number,
-            image=image,
-            name=driver_name,
-            min_speed=min_speed,
-            max_speed=max_speed
+            image=DRIVER_DATA.get(number).get("symbol"),
+            name=DRIVER_DATA.get(number).get("name"),
+            min_speed=self.min_speed,
+            max_speed=self.max_speed
         )
         self.cars.append(car)
 
-    def add_track(self, number, car_image):
+    def add_track(self, number):
         """
         Creates a Racetrack item and adds it to track list
-        Accepts track number and car image as input
+        Accepts track number
         """
         track = racetrack.Racetrack(
             track_number=number,
-            image=car_image,
+            image=DRIVER_DATA.get(number).get("symbol"),
             length=self.track_length
         )
         self.tracks.append(track)
