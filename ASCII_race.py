@@ -1,7 +1,6 @@
 import time
 import race_manager
 import result
-#testing
 
 NUMBER_OF_RACERS = 10  # MAX 10
 TRACK_MIN_LENGTH = 30

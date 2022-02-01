@@ -25,3 +25,42 @@ Race results:
 8        Breen      B  4.03
 9        Meeke      M  4.29
 10        Loeb      L  4.29
+
+2022-02-01 17:31:20 race results:
+        Driver Symbol  Time
+1   Greensmith      G  2.26
+2        Tänak      T  2.54
+3     Neuville      N  2.54
+4         Loeb      L  2.54
+5        Meeke      M  2.54
+6        Sordo      S  2.82
+7        Ogier      O  2.82
+8        Evans      E  2.82
+9        Breen      B  2.82
+10   Rovanpara      R  2.82
+
+2022-02-01 17:31:29 race results:
+        Driver Symbol  Time
+1        Sordo      S  0.85
+2     Neuville      N  1.13
+3   Greensmith      G  1.13
+4    Rovanpara      R  1.13
+5        Tänak      T  1.13
+6        Breen      B  1.41
+7         Loeb      L  1.41
+8        Ogier      O  1.41
+9        Evans      E  1.41
+10       Meeke      M  1.41
+
+2022-02-01 17:31:36 race results:
+        Driver Symbol  Time
+1     Neuville      N  3.12
+2         Loeb      L  3.40
+3        Meeke      M  3.40
+4        Sordo      S  3.40
+5        Tänak      T  3.41
+6        Ogier      O  3.68
+7    Rovanpara      R  3.68
+8        Breen      B  3.68
+9        Evans      E  3.97
+10  Greensmith      G  4.24
